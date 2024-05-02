@@ -120,26 +120,5 @@ public class MySecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-
-
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//
-//
-//        http
-//                .csrf()
-//                .disable()
-//                .cors()
-//                .disable()
-//                .authorizeRequests()
-//                .antMatchers("/generate-token", "/user/").permitAll()
-//                .antMatchers(HttpMethod.OPTIONS).permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
-//                .and()
-//                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//
-//        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-//    }
+   }
 }
